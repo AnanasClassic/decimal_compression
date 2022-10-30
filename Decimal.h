@@ -6,7 +6,7 @@ class Decimal {
   Decimal(std::string value);
 
   const bool is_positive_;
-  bool IsZero() const { return value_ == "0," || value_ == "-0,"; }
+  bool IsZero() const { return value_ == "0,0" || value_ == "-0,0"; }
 
   std::string GetValue() const { return value_; }
   std::string GetIntegerPart() const;
